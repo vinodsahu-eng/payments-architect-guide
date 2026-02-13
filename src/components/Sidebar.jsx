@@ -1,5 +1,11 @@
 const lessons = [
   {
+    id: "intro",
+    number: "00",
+    title: "Introduction",
+    topics: ["About this guide", "Author", "Disclaimer"],
+  },
+  {
     id: "lesson1",
     number: "01",
     title: "The Payment Stack",
@@ -11,7 +17,7 @@ const lessons = [
     title: "Flow Diagrams",
     topics: ["Card Present", "Card Not Present"],
   },
-];
+]
 
 export default function Sidebar({ activeLesson, onSelect }) {
   return (

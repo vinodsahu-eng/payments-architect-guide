@@ -17,6 +17,18 @@ const lessons = [
     title: "Flow Diagrams",
     topics: ["Card Present", "Card Not Present"],
   },
+  {
+    id: "lesson2",
+    number: "02",
+    title: "Transaction Lifecycle",
+    topics: ["Auth, Capture, Void", "Refund, Chargeback"],
+  },
+  {
+    id: "lesson2-diagram",
+    number: "02",
+    title: "Lifecycle Diagram",
+    topics: ["4 transaction paths", "API states", "Architect notes"],
+  },
 ]
 
 export default function Sidebar({ activeLesson, onSelect }) {

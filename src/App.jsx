@@ -3,11 +3,15 @@ import Sidebar from "./components/Sidebar"
 import Intro from "./lessons/Intro"
 import Lesson1_Content from "./lessons/Lesson1_Content"
 import Lesson1_Diagram from "./lessons/Lesson1_Diagram"
+import Lesson2_Content from "./lessons/Lesson2_Content"
+import Lesson2_Diagram from "./lessons/Lesson2_Diagram"
 
 const LESSONS = {
   intro: <Intro />,
   lesson1: <Lesson1_Content />,
   "lesson1-diagram": <Lesson1_Diagram />,
+  lesson2: <Lesson2_Content />,
+  "lesson2-diagram": <Lesson2_Diagram />,
 }
 
 export default function App() {

@@ -29,6 +29,24 @@ const lessons = [
     title: "Lifecycle Diagram",
     topics: ["4 transaction paths", "API states", "Architect notes"],
   },
+  {
+  id: "lesson3",
+  number: "03",
+  title: "Payment Rails",
+  topics: ["US rails", "India rails", "Tradeoffs"],
+},
+{
+  id: "lesson3b",
+  number: "03B",
+  title: "Card Rails Deep Dive",
+  topics: ["BIN intelligence", "Auth optimization", "Routing"],
+},
+{
+  id: "lesson3-diagram",
+  number: "03",
+  title: "Rails Diagram",
+  topics: ["Interactive comparison", "US & India", "Radar chart"],
+},
 ]
 
 export default function Sidebar({ activeLesson, onSelect }) {

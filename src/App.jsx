@@ -5,6 +5,11 @@ import Lesson1_Content from "./lessons/Lesson1_Content"
 import Lesson1_Diagram from "./lessons/Lesson1_Diagram"
 import Lesson2_Content from "./lessons/Lesson2_Content"
 import Lesson2_Diagram from "./lessons/Lesson2_Diagram"
+import Lesson3_Content from "./lessons/Lesson3_Content"
+import Lesson3B_Content from "./lessons/Lesson3B_Content"
+import Lesson3_Diagram from "./lessons/Lesson3_Diagram"
+
+
 
 const LESSONS = {
   intro: <Intro />,
@@ -12,6 +17,9 @@ const LESSONS = {
   "lesson1-diagram": <Lesson1_Diagram />,
   lesson2: <Lesson2_Content />,
   "lesson2-diagram": <Lesson2_Diagram />,
+  lesson3: <Lesson3_Content />,
+  "lesson3b": <Lesson3B_Content />,
+  "lesson3-diagram": <Lesson3_Diagram />,
 }
 
 export default function App() {

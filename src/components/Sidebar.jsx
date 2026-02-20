@@ -1,4 +1,10 @@
 const lessons = [
+   {
+    id: "home",
+    number: "⌂",
+    title: "Home",
+    topics: ["Interactive exploration", "Visual flows"],
+  },
   {
     id: "intro",
     number: "00",

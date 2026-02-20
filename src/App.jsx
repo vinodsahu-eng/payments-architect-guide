@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Sidebar from "./components/Sidebar"
+import Homepage from "./lessons/Homepage"
 import Intro from "./lessons/Intro"
 import Lesson1_Content from "./lessons/Lesson1_Content"
 import Lesson1_Diagram from "./lessons/Lesson1_Diagram"
@@ -9,9 +10,8 @@ import Lesson3_Content from "./lessons/Lesson3_Content"
 import Lesson3B_Content from "./lessons/Lesson3B_Content"
 import Lesson3_Diagram from "./lessons/Lesson3_Diagram"
 
-
-
 const LESSONS = {
+  home: (navigate) => <Homepage onNavigate={navigate} />,
   intro: <Intro />,
   lesson1: <Lesson1_Content />,
   "lesson1-diagram": <Lesson1_Diagram />,
@@ -23,7 +23,7 @@ const LESSONS = {
 }
 
 export default function App() {
-  const [activeLesson, setActiveLesson] = useState("intro")
+  const [activeLesson, setActiveLesson] = useState("home")
 
   return (
     <div style={{
@@ -42,7 +42,9 @@ export default function App() {
         background: "#0a0e1a",
         overflowY: "auto",
       }}>
-        {LESSONS[activeLesson]}
+        {typeof LESSONS[activeLesson] === 'function'
+          ? LESSONS[activeLesson](setActiveLesson)
+          : LESSONS[activeLesson]}
       </div>
     </div>
   )
